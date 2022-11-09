@@ -12,6 +12,13 @@ const arrObj=[
 
     },
     {
+    email:'mauricio_bo@gmail.com',
+    first_name:'mauricio', 
+    last_name:'bo',
+    functions:'admin'
+    
+    },
+    {
     email:'berrfarias@gmail.com',
     first_name:'bernardo', 
     last_name:'farias',
