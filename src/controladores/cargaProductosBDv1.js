@@ -32,6 +32,7 @@ for(let i=0;i<10;i++){
                 })
                 for(let e of aux1){
                     await Products.findOrCreate({
+                        
                         where:{
                         description:e.title,
                         image:e.image,

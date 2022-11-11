@@ -3,14 +3,21 @@ const { conn } = require('./src/db.js');
 
 const{CargarTodo}=require('./src/controladores/cargaProductosBDv1')
 const{cargarUsuario,arrObj}=require('./src/controladores/cargarAdmin')
+const {Category} = require('./src/db.js')
 const PORT = process.env.PORT || 3001
 
-  conn.sync({force: true}).then(() => {
+  conn.sync().then(() => {
   server.listen(PORT, async () => { 
     console.log('%s listening at ', PORT); // eslint-disable-line no-console
 
-    CargarTodo();
-    cargarUsuario(arrObj);
+    const project = await Category.findOne({ where: { id: 1 } });
+    if (project === null) {
+      CargarTodo();
+      cargarUsuario(arrObj);
+    } else {
+      console.log("All carged"); // true
+  
+    }
 
   });
 });
