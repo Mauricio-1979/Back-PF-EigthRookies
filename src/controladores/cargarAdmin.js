@@ -12,11 +12,11 @@ const arrObj=[
 
     },
     {
-    email:'mauricio_bo@gmail.com',
+    email:'mauricio_bo@hotmail.com',
     first_name:'mauricio', 
     last_name:'bo',
-    functions:'admin'
-    
+    functions:'admin',
+    password: '123456',
     },
     {
     email:'berrfarias@gmail.com',
@@ -36,7 +36,7 @@ const arrObj=[
     email:'algunocualquiera@gmail.com',
     first_name:'pablito',
     last_name:'marmol',
-        
+    password: '123456',    
     },
     {
     email:'leojg@gmail.com',
